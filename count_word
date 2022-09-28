@@ -1,0 +1,26 @@
+/* Given a string s consisting of words and spaces, return the length of the last word in the string.
+A word is a maximal substring consisting of non-space characters only. */
+class count_word
+{
+    public static void main(String[] args)
+    {
+        String str = "Hello World";
+        int count=0, i=str.length()-1;
+        while(i>=0)
+        {
+            if(str.charAt(i)!=' ')
+            {
+                count++;
+            }
+            else
+            {
+                if(count>0)
+                {
+                    break;
+                }
+            }
+            i--;
+        }
+        System.out.println(count);
+    }
+}
