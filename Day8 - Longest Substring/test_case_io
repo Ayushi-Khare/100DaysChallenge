@@ -1,0 +1,49 @@
+test case - "abcabcbb"
+output - 3 
+Explanation - length is 3 for substring abc
+
+test case - "bbbbb"
+output - 1 
+Explanation - length is 1 for substring b
+
+test case - "pwwkew"
+output - 3 
+Explanation - length is 3 for substring wke
+
+test case - ""
+output - 0
+Explanation - length is 0 as there's no string in the input
+
+test case - " "
+output - 1
+Explanation - length is 1 as there is a space character in the string
+
+test case - "abcfd"
+output - 5
+Explanation - length is 5 for substring abcfd
+
+test case - "1234"
+output - 4
+Explanation - length is 4 for substring 1234
+
+test case - "@#$$"
+output - 3
+Explanation - length is 3 for substring @#$
+
+test case - "a"
+output - 1
+Explanation - length is 1 for substring a
+
+test case - " d"
+output - 2
+Explanation - length is 2 for substring " d"
+
+
+
+
+
+5
+4
+3
+1
+2
