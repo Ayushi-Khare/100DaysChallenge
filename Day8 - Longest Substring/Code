@@ -10,7 +10,7 @@ class Solution {
             //loop that will iterate from i to length of string
             for(int j=i; j<str.length(); j++)
             {
-                //comparing j(th) character to entire string of str1
+                //comparing j(th) character to entire string of str1 OR j is equal to length of string
                 if(str1.contains(String.valueOf(str.charAt(j))) || j==str.length()-1) 
                 {
                     if(str1.length() > len) 
