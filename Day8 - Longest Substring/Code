@@ -1,28 +1,34 @@
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        String str = s+" ";
+        String str = s+" ";  //to add space in the copy of the original string
         String str1="";
         int len=0;
+        //loop that will go from 0 to length of string
         for(int i=0; i<str.length(); i++)
         {
             str1="";
+            //loop that will iterate from i to length of string
             for(int j=i; j<str.length(); j++)
             {
-                if(str1.contains(String.valueOf(str.charAt(j))) || j==str.length()-1)
+                //comparing j(th) character to entire string of str1
+                if(str1.contains(String.valueOf(str.charAt(j))) || j==str.length()-1) 
                 {
-                    if(str1.length() > len)
+                    if(str1.length() > len) 
                     {
-                        len = str1.length();
+                        //len value will change if the new str1 substring length is greater than len
+                        len = str1.length();  
                     }
                     str1="";
                     break;
                 }
                 else
                 {
+                    //add substring in str1
                     str1 = str1+str.charAt(j);
                 }
             }
         }
+        //returning the maximum length of a substring
         return(len);
     }
 }
