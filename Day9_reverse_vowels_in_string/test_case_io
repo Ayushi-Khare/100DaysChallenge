@@ -1,0 +1,48 @@
+Example 1:
+Input: s = "hello"
+Output: "holle"
+
+Example 2:
+Input: s = "leetcode"
+Output: "leotcede"
+
+Example 3:
+Input: s = " "
+Output: " "
+
+Example 4:
+Input: s = "12354"
+Output: "12354"
+
+Example 5:
+Input: s = "@sed"
+Output: "@sed"
+
+Example 6:
+Input: s = "HELLooO"
+Output: "HOLLooE"
+
+Example 7:
+Input: s = "aeiou"
+Output: "uoiea"
+
+Example 8:
+Input: s = "bcdgf"
+Output: "bcdgf"
+
+Example 9:
+Input: s = "aaeeiiuu"
+Output: "uuiieeaa"
+
+//In this code string length should always be 1<= size <=30000, therefore there will not be a possibility of null string.
+
+
+
+
+
+
+
+
+
+
+
