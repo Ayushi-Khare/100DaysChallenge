@@ -2,16 +2,21 @@ class Solution {
     public String reverseVowels(String s) {
         String v="", str="";
         int x=0;
+        //loop to find all the vowels present in the string
         for(int j=0; j<s.length(); j++)
         {
+            //function calling to check if the character is a vowel or a consonant
             if(vowel(Character.toString(s.charAt(j)))==0)
             {
+                //if vowel the character will be added in a new string in reverse order
                 v=Character.toString(s.charAt(j))+v;
             }
         }
-
+        
+        //loop to reverse the position of vowels in the original string and store it in a new string
         for(int i=0; i<s.length(); i++)
         {
+            //checking if the character is a vowel, it will be replaced with the vowels in a reverse order
             if(vowel(Character.toString(s.charAt(i)))==0)
             {
                 str=str+v.charAt(x);
@@ -25,16 +30,17 @@ class Solution {
         return(str);
     }
     
+    //function to check if the character is a vowel or not
     public int vowel(String s)
     {
         if(s.charAt(0)=='a' || s.charAt(0)=='e' || s.charAt(0)=='i' || s.charAt(0)=='o' || s.charAt(0)=='u')
         {
             return 0;
-        }
+        }//to check the lowercase vowel
         else if(s.charAt(0)=='A' || s.charAt(0)=='E' || s.charAt(0)=='I' || s.charAt(0)=='O' || s.charAt(0)=='U')
         {
             return 0;
-        }
+        }//to check the uppercase vowel
         else
         {
             return 1;
