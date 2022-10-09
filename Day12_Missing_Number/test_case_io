@@ -19,3 +19,4 @@ Output: 0
 Explanation: n = 0 since there are 7 numbers, so all numbers are in the range [1,9]. 0 is the missing number in the range since it does not appear in nums.
 
 //the array must contains value 0 or 1 and the array must not have more than 1 missing number
+//the array size should be more than 0.
