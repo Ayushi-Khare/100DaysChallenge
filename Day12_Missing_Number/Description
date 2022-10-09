@@ -1,0 +1,5 @@
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+//if the number is missing print the number
+//the array should start from 0, if not, print the 0th element-1
+//if no number is missing, print the [element(length-1)] + 1
