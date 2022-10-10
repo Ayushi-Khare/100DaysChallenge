@@ -14,4 +14,4 @@ Input: haystack = "hehllo", needle = "h"
 Output: 2
 Explanation: "h" occurs in "hehllo" at index 2, so we return 2.
 
-#Note that the code is for lowercase letters only.
+***Note that the code is for lowercase letters only.***
