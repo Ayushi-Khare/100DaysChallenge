@@ -1,0 +1,37 @@
+class Solution {
+    public int strStr(String haystack, String needle) {
+        int pos=0, flag=0;
+        for(int i=0; i<haystack.length(); i++)
+        {
+            String temp="";
+            flag=0;
+            pos=0;
+            for(int j=i; j<haystack.length(); j++)
+            {
+                if(haystack.charAt(j)==needle.charAt(0) && flag==0)
+                {
+                    flag=1;
+                    pos=j;
+                }//to match the 0th character of needle 
+                if(flag==1)
+                {
+                    temp=temp+haystack.charAt(j);
+                    if(temp.equals(needle))
+                    {
+                        flag=2;
+                        break;
+                    }//if the string matches, the loop will break
+                }//once the character is matched, it will check the further string
+            }
+            if(flag==2)
+            {
+                break;
+            }
+        }
+        if(flag!=2)
+        {
+            pos=-1;
+        }//pos will get assigned to -1 if the string is not present
+        return(pos);
+    }
+}
