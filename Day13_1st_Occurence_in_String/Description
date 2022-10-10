@@ -8,3 +8,5 @@ Explanation: "sad" occurs at index 0 and 6.
 The first occurrence is at index 0, so we return 0.
 
 //String (Haystack, needle) length shouls be more than 1, Therefore the possiblity of empty string is eliminated.
+
+***Note that the code is for lowercase letters only.***
