@@ -6,11 +6,11 @@ class Solution {
             if(i<(n.length)/2)
             {
                 n[i]=nums[i];
-            }
+            }//if size less than size of n/2, the values will be copied from nums[i] to n[i] array
             else
             {
                 n[i]=nums[i-nums.length];
-            }
+            }//else, n[i] should store values by i-nums.length order, if i=3 and size of n is 6, it will store value of i-size of nums arr (i-nums.length(i.e 3 in this case))
         }
         return(n);
     }
