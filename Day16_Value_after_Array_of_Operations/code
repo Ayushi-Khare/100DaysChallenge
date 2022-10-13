@@ -1,0 +1,31 @@
+class Solution {
+    public int finalValueAfterOperations(String[] operations) {
+        int x = 0;
+        for(int i=0; i<operations.length; i++)
+        {
+            if(operations[i].charAt(0)=='X')
+            {
+                if(operations[i].charAt(1)=='+')
+                {
+                    x++;
+                }
+                else
+                {
+                    x--;
+                }
+            }//the operation starts from the variable, hence it is post increment/decrement operator, thus the values will be post incremented/decremented
+            else
+            {
+                if(operations[i].charAt(0)=='+')
+                {
+                    ++x;
+                }
+                else
+                {
+                    --x;
+                }
+            }//the operation starts from the operator, hence it is pre increment/decrement operator, thus the values will be pre incremented/decremented.
+        }
+        return(x);
+    }
+}
