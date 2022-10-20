@@ -1,0 +1,20 @@
+class Solution {
+    public String reverseWords(String s) {
+        s=s+' ';
+        String str="", f_str="";
+        for(int i=0; i<s.length(); i++)
+        {
+            if(s.charAt(i)!=' ')
+            {
+                str=s.charAt(i)+str;
+            }//the characters will be added until space is detected
+            else
+            {
+                f_str=f_str+str+' ';
+                str="";
+            }//the word will gets added in a new string and will form the reverse string
+        }
+        return(f_str.trim());
+        //trim function is used to remove the unwanted spaces if any
+    }
+}
