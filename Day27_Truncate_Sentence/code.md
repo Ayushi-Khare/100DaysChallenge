@@ -1,4 +1,4 @@
-```
+```JAVA
 class Solution {
     public boolean checkIfPangram(String sentence) {
         int flag=0;
