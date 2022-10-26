@@ -7,7 +7,7 @@ class Solution {
             s[i]=s[j];
             s[j]=temp;
             j--;
-        }
+        }//i loop iterating from first index, j loop iterating from last index, where ith and jth index elements are swapping
     }
     
 }
