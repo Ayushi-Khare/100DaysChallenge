@@ -1,4 +1,4 @@
-'''java
+```java
 class Solution {
     public char repeatedCharacter(String s) {
         String str1="";
@@ -23,4 +23,4 @@ class Solution {
         return(s.charAt(min));
     }
 }
-'''
+```
