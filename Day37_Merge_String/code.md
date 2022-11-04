@@ -1,0 +1,42 @@
+```java
+class Solution {
+    public String mergeAlternately(String word1, String word2) {
+    String concat="";
+        if(word1.length()==word2.length())
+        {
+            concat=str_concat(word1.length(), word1, word2);
+        }
+        else if(word1.length()>word2.length())
+        {
+            concat=str_concat(word2.length(),word1, word2);
+            concat=concat+rem(word2.length(), word1);
+        }
+        else
+        {
+            concat=str_concat(word1.length(),word1, word2);
+            concat=concat+rem(word1.length(), word2);
+        }
+        return(concat);
+    }
+    //function to add the string 
+    String str_concat(int pos, String w1, String w2)
+    {
+        String con="";
+        for(int i=0; i<pos; i++)
+        {
+            con=con+w1.charAt(i)+w2.charAt(i);
+        }
+        return(con);
+    }
+    //function to add the remaining string
+    String rem(int pos, String word)
+    {
+        String con="";
+        for(int i=pos; i<word.length(); i++)
+        {
+            con=con+word.charAt(i);
+        }
+        return(con);
+    }
+}
+```
