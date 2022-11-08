@@ -11,6 +11,7 @@ class Solution {
            return false;
         }
     }
+    //function to count the number of occurence of digits
     String Count(String str)
     {
         String str1="";
