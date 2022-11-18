@@ -13,9 +13,10 @@ class Solution {
                 }
             }
             c++;
-        }
+        }//calling function count to check if array consist of values other than 0
         return(c);
     }
+    //function to find the minimum value
     int min(int nums[])
     {
         int min=nums[0];
@@ -28,6 +29,7 @@ class Solution {
         }
         return(min);
     }
+    //function to check if array consist of elements other than 0
     int count(int nums[])
     {
         int flag=0;
