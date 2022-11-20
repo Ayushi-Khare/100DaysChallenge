@@ -1,3 +1,4 @@
+```java
 class Solution {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
         int pos=0;
@@ -39,3 +40,4 @@ class Solution {
         return(arr);
     }
 }
+```
