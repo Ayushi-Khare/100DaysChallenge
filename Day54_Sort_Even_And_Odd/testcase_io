@@ -1,0 +1,7 @@
+Input: nums = [4,1,2,3]
+Output: [2,3,4,1]
+Explanation: 
+First, we sort the values present at odd indices (1 and 3) in non-
+
+Input: nums = [2,1]
+Output: [2,1]
