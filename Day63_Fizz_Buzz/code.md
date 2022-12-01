@@ -1,4 +1,4 @@
-'''java
+```java
 class Solution {
     public List<String> fizzBuzz(int n) {
         String arr[] = new String[n];
@@ -36,4 +36,4 @@ class Solution {
         return(arr);
     }
 }
-'''
+```
