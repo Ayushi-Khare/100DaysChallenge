@@ -7,7 +7,7 @@ class Solution {
             int flag=0;
             for(int j=0; j<arr2.length; j++)
             {
-                int x=arr1[i]-arr2[j];
+                int x=arr1[i]-arr2[j]; 
                 if(x<0)
                 {
                     x=x*(-1);
