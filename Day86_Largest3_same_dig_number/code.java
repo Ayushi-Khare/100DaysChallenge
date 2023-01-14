@@ -1,0 +1,25 @@
+class Solution {
+    public String largestGoodInteger(String num) {
+        int max=-1;
+        String s="";
+        for(int i=0; i<num.length()-2; i++)
+        {
+            int n=0;
+            if(num.charAt(i)==num.charAt(i+1) && num.charAt(i)==num.charAt(i+2))
+            {
+                int j=i;
+                while(j<=(i+2))
+                {
+                    n=(n*10)+Integer.parseInt(String.valueOf(num.charAt(j)));
+                    j++;
+                }
+                if(max<n)
+                {
+                    max=n;
+                    s=num.charAt(i)+""+num.charAt(i+1)+""+num.charAt(i+2);
+                }
+            }
+        }
+        return(s);
+    }
+}
